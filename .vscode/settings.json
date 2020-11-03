@@ -1,0 +1,7 @@
+{
+    "idf.espIdfPath": "/home/tig3r/esp/esp-idf",
+    "idf.toolsPath": "/home/tig3r/.espressif",
+    "idf.pythonBinPath": "/home/tig3r/.espressif/python_env/idf4.3_py3.8_env/bin/python",
+    "idf.customExtraPaths": "/home/tig3r/.espressif/python_env/idf4.3_py3.8_env/bin:/usr/bin:/home/tig3r/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin:/home/tig3r/.espressif/tools/xtensa-esp32s2-elf/esp-2020r3-8.4.0/xtensa-esp32s2-elf/bin:/home/tig3r/.espressif/tools/xtensa-esp32s3-elf/esp-2020r3-8.4.0/xtensa-esp32s3-elf/bin:/home/tig3r/.espressif/tools/esp32ulp-elf/2.28.51-esp-20191205/esp32ulp-elf-binutils/bin:/home/tig3r/.espressif/tools/esp32s2ulp-elf/2.28.51-esp-20191205/esp32s2ulp-elf-binutils/bin:/home/tig3r/.espressif/tools/openocd-esp32/v0.10.0-esp32-20200709/openocd-esp32/bin",
+    "idf.customExtraVars": "{\"OPENOCD_SCRIPTS\":\"/home/tig3r/.espressif/tools/openocd-esp32/v0.10.0-esp32-20200709/openocd-esp32/share/openocd/scripts\"}"
+}

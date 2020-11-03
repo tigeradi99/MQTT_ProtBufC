@@ -1,0 +1,6 @@
+source "/home/tig3r/esp/esp-idf/components/app_update/Kconfig.projbuild"
+source "/home/tig3r/esp/esp-idf/components/bootloader/Kconfig.projbuild"
+source "/home/tig3r/esp/esp-idf/components/esptool_py/Kconfig.projbuild"
+source "/home/tig3r/esp/esp-idf/components/partition_table/Kconfig.projbuild"
+source "/home/tig3r/esp/esp-idf/examples/common_components/protocol_examples_common/Kconfig.projbuild"
+source "/home/tig3r/esp/tcp/main/Kconfig.projbuild"
