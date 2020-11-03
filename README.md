@@ -6,13 +6,22 @@ This example connects to the broker URI selected using `idf.py menuconfig` (usin
 
 Note: If the URI equals `FROM_STDIN` then the broker address is read from stdin upon application startup (used for testing)
 
-It uses ESP-MQTT library which implements mqtt client to connect to mqtt broker.
+It uses ESP-MQTT library which implements mqtt client to connect to mqtt broker, and then uses protocol buffers for communication.
 
 ## How to use example
 
 ### Hardware Required
 
-This example can be executed on any ESP32 board, the only required interface is WiFi and connection to internet.
+This example can be executed on any ESP32 board, the only required interface is WiFi and connection to internet. To turn on the LED, use client-pub-alt.py and provide arguments /topic/qos0 INTERNAL_LED_STATE 'VALUE', where VALUE 
+should be 1 to turn on the LED, then 0 to turn it off. The argument INTERNAL_LED_STATE can be modified to your choice, it does not play any role in turning the LED on/off. It's used for output purposes, where adter passing this
+argument, the idf.py monitor should look like:
+
+```
+I(5214)
+INTERNAL_LED_STATE 1
+I(5224)
+INTERNAL_LED_STATE 0
+```
 
 ### Configure the project
 
@@ -51,9 +60,10 @@ I (4684) MQTT_EXAMPLE: sent publish successful, msg_id=0
 I (4884) MQTT_CLIENT: deliver_publish, message_length_read=19, message_length=19
 I (4884) MQTT_EXAMPLE: MQTT_EVENT_DATA
 TOPIC=/topic/qos0
-DATA=data
+temperature : 32 C
 I (5194) MQTT_CLIENT: deliver_publish, message_length_read=19, message_length=19
 I (5194) MQTT_EXAMPLE: MQTT_EVENT_DATA
 TOPIC=/topic/qos0
-DATA=data
+temperature : 32 C
 ```
+
