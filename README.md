@@ -67,3 +67,4 @@ TOPIC=/topic/qos0
 temperature : 32 C
 ```
 
+### PS: Please visit https://github.com/tigeradi99/RPC_funcs to check out a detailed implementation!
